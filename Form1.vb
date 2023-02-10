@@ -1,4 +1,5 @@
 ﻿Public Class Form1
+    ' COMPUTE
     Private Sub btnCompute_Click(sender As Object, e As EventArgs) Handles btnCompute.Click
         Dim fHrs, fOverTime, fGross, fNet, fPayGrade, fDeduc, fTaxRate, fRegWage, fTaxDue As Double
         fOverTime = 0
@@ -80,7 +81,7 @@
         txtGross3.Text = fGross.ToString("c2")
         txtNet3.Text = fNet.ToString("C2")
     End Sub
-
+    ' CLEAR
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         Dim m As Integer = MessageBox.Show("Are you sure you want to clear the form?", "Clear Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If m = 7 Then
@@ -104,7 +105,7 @@
         txtGross3.Text = ""
         txtNet3.Text = ""
     End Sub
-
+    ' EXIT
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim m As Integer = MessageBox.Show("Are you sure you want to exit?", "Exitting Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If m = 7 Then
