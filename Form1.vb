@@ -69,8 +69,8 @@
         End If
         fGross = fHrs * fRegWage + fOverTime
         fTaxDue = fTaxRate * fGross
-        fDeduc = SSS + PAG_IBIG
-        fNet = fGross - (fDeduc + fTaxDue)
+        fDeduc = SSS + PAG_IBIG + fTaxDue
+        fNet = fGross - fDeduc
 
         txtSal2.Text = fPayGrade.ToString("C2")
         txtName3.Text = txtName1.Text
